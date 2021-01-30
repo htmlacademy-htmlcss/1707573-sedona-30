@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог гостиниц в Седоне</title>
@@ -8,6 +8,9 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -135,7 +138,7 @@
 
         <ul>
           <li>
-            <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
+            <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Гостиница 'Amara Resort & Spa'">
             <h2>
               <a href="#">Amara Resort & Spa</a>
             </h2>
@@ -154,7 +157,7 @@
             </div>
           </li>
           <li>
-            <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Мотель 'Desert Quail Inn'">
             <h2>
               <a href="#">Desert Quail Inn</a>
             </h2>
@@ -173,7 +176,7 @@
             </div>
           </li>
           <li>
-            <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Апартаменты 'Villas at Poco Diablo'">
             <h2>
               <a href="#">Villas at Poco Diablo</a>
             </h2>
@@ -196,34 +199,38 @@
 
     </main>
 
-    <footer>
-      <section>
+    <footer class="main-footer">
+
+      <section class="footer-contacts">
         <h2>Как с нами связаться</h2>
         <p>
           #visitsedona<br>
-          Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+          Тел: <a href="tel:+74956660166" class="footer-phone">+7(495) 666-01-66</a>
         </p>
       </section>
-      <section>
+
+      <section class="footer-social">
         <h2>Социальные сети</h2>
         <ul>
           <li>
-            <a href="#">Твиттер</a>
+            <a href="#" class="social-button">Твиттер</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#" class="social-button">Фейсбук</a>
           </li>
           <li>
-            <a href="#">Ютуб</a>
+            <a href="#" class="social-button">Ютуб</a>
           </li>
         </ul>
       </section>
-      <p>
+
+      <p class="footer-copyright">
         Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
+
     </footer>
 
   </body>
