@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
-
-    <header class="main-header">
-      <h1>Добро пожаловать в Седону</h1>
+  <body>
+    <div class="container">
+    <header class="main-header ">
+      <h1 class="d_none">Добро пожаловать в Седону</h1>
 
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -30,74 +30,74 @@
         </ul>
       </nav>
 
-      <div class="header-logo">
-        <h2>Приветствие</h2>
-        <img src="img/header-logo.svg" width="457" height="351" alt="Добро пожаловать в Седону">
+      <div class="banner">
+        <h2 class="banner-title d_none">Приветствие</h2>
+        <img src="img/banner-logo.svg" width="457" height="351" alt="Добро пожаловать в Седону" class="banner-img">
       </div>
     </header>
 
-    <main class="container">      
+    <main>      
 
       <section class="features">
-        <h1>Преимущества Седоны</h1>
+        <h1 class="d_none">Преимущества Седоны</h1>
 
-        <p class="subtitle"><strong>Седона — небольшой городок в Аризоне, заслуживающий большего!</strong></p>
+        <p class="subtitle"><strong>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</strong></p>
         <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
         <section class="feature">
-          <h2>Настоящий городок</h2>
-          <span>— №1 —</span>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <h2 class="heading">Настоящий городок</h2>
+          <span class="number">— №1 —</span>
+          <p class="text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           <img src="img/features-image-town.jpg" width="800" height="256" alt="Городок Седона">
         </section>
         
         <section class="features-infrastructure">
-          <h2>Комфортная туристическая инфраструктура</h2>
+          <h2 class="d_none">Комфортная туристическая инфраструктура</h2>
 
           <ul class="features-list">
             <li class="features-item">
               <img src="img/features-icon-house.svg" width="73" height="72" alt="Широкий выбор жилья">
-              <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <h3 class="heading">Жильё</h3>
+              <p class="text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="features-item">
               <img src="img/features-icon-food.svg" width="75" height="70" alt="Разнообразие вкусной еды">
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h3 class="heading">Еда</h3>
+              <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="features-item">
               <img src="img/features-icon-gift.svg" width="64" height="77" alt="Сувениры на любой вкус">
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
+              <h3 class="heading">Сувениры</h3>
+              <p class="text">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </section>  
 
         <section class="feature">
           <h2>Там есть Мост дьявола</h2>
-          <span>— №2 —</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <span class="number">— №2 —</span>
+          <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           <img src="img/features-image-bridge.jpg" width="800" height="256" alt="Мост дьявола">
         </section>
 
         <section class="features-rest">
-          <h2>Удобство отдыха</h2>
+          <h2 class="d_none">Удобство отдыха</h2>
 
           <ul class="features-rest-list">
             <li class="features-rest-item">            
-              <h3>Небольшая площадь</h3>
-              <span>— №3 —</span>
-              <p>Все достопримечательности находятся очень близко</p>
+              <h3 class="title">Небольшая площадь</h3>
+              <span class="number">— №3 —</span>
+              <p class="text">Все достопримечательности находятся очень близко</p>
             </li>          
             <li class="features-rest-item">
-              <h3>Красивая дорога</h3>
-              <span>— №4 —</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="title">Красивая дорога</h3>
+              <span class="number">— №4 —</span>
+              <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="features-rest-item">
-              <h3>Мало туристов</h3>
-              <span>— №5 —</span>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+              <h3 class="title">Мало туристов</h3>
+              <span class="number">— №5 —</span>
+              <p class="text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
         </section>
@@ -105,14 +105,14 @@
       </section>
 
       <section class="appointment">
-        <h1>Заинтересовались?</h1>
+        <h1 class="heading">Заинтересовались?</h1>
         <p class="appointment-info">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <p>
           <button type="button" class="button">Поиск гостиницы в Седоне</button>
         </p>
         <!-- Здесь будет карта -->
-        <img src="img/map.jpg" width="1199" height="594" alt="Карта">
+        <img src="img/map.jpg" width="1199" height="594" alt="Карта" class="map-img">
       </section>
 
     </main>
@@ -120,22 +120,23 @@
     <footer class="main-footer">
       
       <section class="footer-contacts">
-        <h2>Как с нами связаться</h2>
-        <p>
+        <h2 class="d_none">Как с нами связаться</h2>
+        <p class="footer-info">
           #visitsedona<br>
           Тел: <a href="tel:+74956660166" class="footer-phone">+7(495) 666-01-66</a>
         </p>
       </section>
+
       <section class="footer-social">
-        <h2>Социальные сети</h2>
-        <ul>
-          <li>
+        <h2 class="d_none">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-list-item">
             <a href="#" class="social-button">Твиттер</a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a href="#" class="social-button">Фейсбук</a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a href="#" class="social-button">Ютуб</a>
           </li>
         </ul>
@@ -143,11 +144,11 @@
 
       <p class="footer-copyright">
         Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="button">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy" class="footer-logo">
         </a>
       </p>
     </footer>
-
+  </div>
   </body>
 </html>
