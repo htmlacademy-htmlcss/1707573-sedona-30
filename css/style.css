@@ -372,14 +372,43 @@ img {
   margin: 0 auto;
 }
 
-.results-item {
+.filters {
+  display: grid;
+  grid-template-columns: 253px 253px 228px 316px;
+}
+
+.results-item {  
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid var(--basic-bg-active);
 }
 
+.results-item .inner {
+  display: grid;
+  grid-template-columns: 527px 400px 127px;
+}
+
 .results-item:last-child {
-  padding-bottom: 0;
+  border-bottom: 1px solid var(--basic-bg-active);
+}
+
+.hotel-wrapper {
+  display: flex;
+  width: 421px;
+  justify-content: space-between;
+}
+
+.hotel-wrapper img {
+  display: block;
+}
+
+.rating-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .fields-group {
@@ -389,9 +418,18 @@ img {
   border: none;
 }
 
+.fields-group:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
 .fields-group .title {
   font-size: 16px;
   margin-bottom: 25px;
+}
+
+.fields-group:nth-child(3) .title {
+  margin-bottom: 11px;
 }
 
 .checkbox-outer {
@@ -408,27 +446,95 @@ img {
   font-weight: 400;
 }
 
-.price-controls {
-  display: inline-block;
-  border: 2px solid var(--basic-white);
-  border-radius: 2px;
+.prices{
+	position: relative;
+	width: 317px;
+	height: 30px;
+	border: 2px solid var(--basic-white);
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	
 }
 
-.price-controls label,
-.price-controls input {
-  width: 60px;
-  font-size: 14px;
-  line-height: 21px;
+.price-amount label{
+	display: inline-block;
+	width: 162px;
+	font-size: 14px;
+	line-height: 21px;
   font-weight: 400;
-  background-color: transparent;
-  color: var(--basic-white);
-  text-align: left;
-  border: none;
+	color: var(--basic-white);
+	text-align: center;	
+}
+
+.price-amount input {
+	width:40px;
+	height: 12px;
+	font-size: 14px;
+	line-height: 38px;
+	margin: 0px;
+	background:none;
+	border:none;
+	color: var(--basic-white);
+}
+
+.price-amount input:focus {
   outline: none;
+  border: none;
+}
+
+.prices::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: var(--basic-white);
+	transform: translate(-50%, -50%);
+}
+
+.range-controls {
+	position: relative;
+	margin-top: 22px;
+}
+
+.scale {
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.3);	
+}
+
+.bar {
+	width: 80%;
+	height: 2px;
+	background-color: var(--basic-white);
+
+}
+
+.range {
+	position: absolute;
+	top: -9px;
+	height: 4px;
+	width: 4px;
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range2 {
+	left: 80%;
+}
+
+.range:hover {
+	background-color:  #1c4f80;
+	border: 10px solid var(--basic-white);
 }
 
 .button-show {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
   margin-top: 23px;
   padding: 0;
   padding: 7px 35px 8px 36px;
@@ -451,8 +557,13 @@ img {
 
 .results {
   padding-top: 29px;
-  padding-bottom: 31px;
   background-color: var(--basic-white);
+}
+
+.category .inner {
+  display: grid;
+  grid-template-columns: 163px 764px 127px;
+  margin-bottom: 30px;
 }
 
 .big {
@@ -461,7 +572,15 @@ img {
   font-weight: 700;
 }
 
+.sorting-controls {
+  text-align: right;
+}
+
 .sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 364px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -496,7 +615,7 @@ img {
   border: none;
 }
 
-.results-hotels {
+.results-hotels {  
   margin: 0;
   padding: 0;
   list-style: none;
@@ -516,6 +635,7 @@ img {
 
 .results-hotels .heading {
   margin: 0;
+  margin-bottom: 7px;
   padding: 0;
 }
 
@@ -539,6 +659,13 @@ img {
   font-weight: 400;
 }
 
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  width: 182px;
+  margin-bottom: 9px;
+}
+
 .more-details,
 .reservation {
   margin: 0;
@@ -555,7 +682,9 @@ img {
 }
 
 .more-details {
-  padding: 3px 16px 3px 17px;
+  display: inline-block;
+  padding: 3px 17px 3px 16px;
+  margin-right: 6px;
   background-color: var(--accent);
 }
 
@@ -600,6 +729,10 @@ img {
   padding-top: 35px;
   padding-bottom: 35px;
   background-color: var(--basic-white-opacity);
+}
+
+.inner-page .main-footer {
+  margin-top: 0;
 }
 
 .footer-contacts,
