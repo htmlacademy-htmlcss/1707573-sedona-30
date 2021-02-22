@@ -298,6 +298,7 @@ img {
 /* Appointment */
 
 .appointment {  
+  position: relative;
   text-align: center;
 }
 
@@ -332,6 +333,7 @@ img {
 .appointment .button {
   margin: 0;
   padding: 0;
+  width: 568px;
   padding: 30px 125px;
   border: none;
   outline: none;
@@ -716,6 +718,170 @@ img {
   font-weight: 400;
   color: var(--basic-dark);
   background-color: var(--basic-bg);
+}
+
+/* Popup form */
+
+.travel-hotels {
+  position: absolute;
+  width: 458px;
+  top: 266px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 55px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.date-in,
+.date-out {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 54px;
+}
+
+.in-label,
+.out-label {
+  width: 36%;
+  line-height: 26px;
+  color: var(--basic-black);  
+  text-align: left;
+}
+
+.in-label-text,
+.out-label-text,
+.older-label-numbers,
+.kids-label-numbers {
+  width: 100%;
+  height: 38px;
+  padding: 0 38px 0 15px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-bg);
+  border: 2px solid var(--basic-bg);
+  box-sizing: border-box;
+}
+
+.in-label-text:hover,
+.out-label-text:hover,
+.older-label-numbers:hover,
+.kids-label-numbers:hover {
+  background-color: var(--basic-bg-hover);
+  border: 2px solid var(--basic-bg-hover);
+}
+
+.in-label-text:focus,
+.out-label-text:focus,
+.older-label-numbers:focus,
+.kids-label-numbers:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-bg-active);
+  outline: none;
+}
+
+.out-img,
+.in-img {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+}
+
+.out-img:hover path,
+.in-img:hover path,
+.kids-plus:hover path,
+.kids-minus:hover rect,
+.older-plus:hover path,
+.older-minus:hover rect {
+  fill: var(--basic-black);
+}
+
+.out-img:active path,
+.in-img:active path,
+.kids-plus:active path,
+.kids-minus:active rect,
+.older-plus:active path,
+.older-minus:active rect {
+  fill: var(--accent);
+}
+
+.older,
+.kids {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.older-label,
+.kids-label {
+  width: 50%;
+  text-align: left;
+  color: var(--basic-black);
+}
+
+.kids-label {
+  padding-left: 23px;
+  text-align: center;
+}
+
+.older-number-minus,
+.older-number-plus,
+.kids-number-minus,
+.kids-number-plus {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--basic-bg);
+}
+
+.older-button,
+.kids-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.older-label-numbers,
+.kids-label-numbers {
+  width: 38px;
+  height: 38px;
+  padding: 0 9px;
+  text-align: center;
+}
+
+.catalog-btn {
+  width: 458px;
+  margin: 0;
+  padding: 16px 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--accent);
+  border: none;
+  cursor: pointer;
+}
+
+.catalog-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.catalog-btn:active {
+  color: var(--basic-white-rgba);
+  background-color: var(--accent-active);
+  outline: none;
 }
 
 /* Footer */
