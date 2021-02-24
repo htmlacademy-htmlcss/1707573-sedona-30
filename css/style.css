@@ -830,20 +830,14 @@ img {
 }
 
 .kids {
-  flex-basis: 225px;
+  flex-basis: 179px;
   margin-left: auto;
 }
 
 .older-label,
 .kids-label {
-  width: 50%;
   text-align: left;
   color: var(--basic-black);
-}
-
-.kids-label {
-  padding-left: 23px;
-  text-align: center;
 }
 
 .older-number-minus,
@@ -866,6 +860,8 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  flex-basis: 114px;
+  margin-left: auto;
 }
 
 .older-label-numbers,
