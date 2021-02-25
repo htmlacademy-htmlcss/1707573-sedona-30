@@ -749,7 +749,6 @@ img {
 
 .in-label,
 .out-label {
-  width: 36%;
   line-height: 26px;
   color: var(--basic-black);  
   text-align: left;
@@ -759,8 +758,9 @@ img {
 .out-label-text,
 .older-label-numbers,
 .kids-label-numbers {
-  width: 100%;
+  flex-basis: 346px;
   height: 38px;
+  margin-left: auto;
   padding: 0 38px 0 15px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -770,6 +770,11 @@ img {
   background-color: var(--basic-bg);
   border: 2px solid var(--basic-bg);
   box-sizing: border-box;
+}
+
+.older-label-numbers,
+.kids-label-numbers {
+  flex-basis: 38px;
 }
 
 .in-label-text:hover,
@@ -818,19 +823,21 @@ img {
 .kids {
   display: flex;
   align-items: center;
-  width: 50%;
+}
+
+.older {
+  flex-basis: 225px;
+}
+
+.kids {
+  flex-basis: 179px;
+  margin-left: auto;
 }
 
 .older-label,
 .kids-label {
-  width: 50%;
   text-align: left;
   color: var(--basic-black);
-}
-
-.kids-label {
-  padding-left: 23px;
-  text-align: center;
 }
 
 .older-number-minus,
@@ -843,6 +850,9 @@ img {
   align-items: center;
   justify-content: center;
   background-color: var(--basic-bg);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .older-button,
@@ -850,6 +860,8 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  flex-basis: 114px;
+  margin-left: auto;
 }
 
 .older-label-numbers,
