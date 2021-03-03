@@ -676,7 +676,9 @@ img {
 }
 
 .icon-up:hover path,
-.icon-down:hover path {
+.icon-down:hover path,
+.icon-up.active:hover path,
+.icon-down.active:hover path {
   fill: var(--basic-black);
 }
 
