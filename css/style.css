@@ -50,6 +50,7 @@
   --special-shadow-neutral: rgba(0, 1, 1, 0.15);
 
   --basic-background: #46627c;
+  --shape-background: #ABABAB;
 
 }
 
@@ -264,6 +265,7 @@ img {
 .features-list,
 .features-rest-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -274,9 +276,11 @@ img {
 }
 
 .features-item {
+  width: 400px;
   padding: 60px 58px;
   background-color: var(--basic-white);
   text-align: center;
+  box-sizing: border-box;
 }
 
 .features-list .heading {
@@ -289,9 +293,11 @@ img {
 }
 
 .features-rest-item {
+  width: 400px;
   padding: 47px 71px;
   align-self: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .features-rest-item .title {
@@ -449,6 +455,42 @@ img {
   margin: 0;
   margin-bottom: 22px;
   padding: 0;
+  padding-left: 40px;
+}
+
+.checkbox-outer label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -1px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:checked + label::before {
+  background: none;
+}
+
+.filter-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 
 .checkbox-outer:last-child {
@@ -529,8 +571,8 @@ img {
 	top: -9px;
 	height: 4px;
 	width: 4px;
-	background-color: #ababab;
-	border: 8px solid #ffffff;
+	background-color: var(--shape-background);
+	border: 8px solid var(--basic-white);
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 var(--special-shadow);
 	cursor: pointer;
@@ -541,7 +583,6 @@ img {
 }
 
 .range:hover {
-	background-color:  #1c4f80;
 	border: 10px solid var(--basic-white);
 }
 
@@ -635,7 +676,9 @@ img {
 }
 
 .icon-up:hover path,
-.icon-down:hover path {
+.icon-down:hover path,
+.icon-up.active:hover path,
+.icon-down.active:hover path {
   fill: var(--basic-black);
 }
 
