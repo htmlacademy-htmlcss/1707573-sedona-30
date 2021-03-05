@@ -353,7 +353,6 @@ img {
   width: 568px;
   padding: 30px 125px;
   border: none;
-  outline: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -363,7 +362,8 @@ img {
   cursor: pointer;
 }
 
-.appointment .button:hover {
+.appointment .button:hover,
+.appointment .button:focus {
   background-color: var(--special-hover);
 }
 
@@ -460,9 +460,13 @@ img {
 
 .checkbox-outer label {
   position: relative;
-  display: block;
+  display: inline-block;
   cursor: pointer;
   user-select: none;
+}
+
+.checkbox-outer .filter-checkbox:focus + label {
+  color: var(--special);
 }
 
 .filter-checkbox + label::before {
@@ -607,6 +611,10 @@ img {
   color: var(--basic-black);
 }
 
+.button-show:focus {
+  outline: 2px solid var(--basic-black);
+}
+
 /* Results */
 
 .results {
@@ -701,7 +709,8 @@ img {
   color: var(--basic-black);
 }
 
-.heading-link:hover {
+.heading-link:hover,
+.heading-link:focus {
   color: var(--accent);
 }
 
@@ -733,7 +742,6 @@ img {
   color: var(--basic-white);
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -744,13 +752,15 @@ img {
   background-color: var(--accent);
 }
 
-.more-details:hover {
+.more-details:hover,
+.more-details:focus {
   background-color: var(--accent-hover);
 }
 
 .more-details:active {
   color: var(--basic-white-rgba);
   background-color: var(--accent-active);
+  outline: none;
 }
 
 .reservation {
@@ -758,13 +768,15 @@ img {
   background-color: var(--special);
 }
 
-.reservation:hover {
+.reservation:hover,
+.reservation:focus {
   background-color: var(--special-hover);
 }
 
 .reservation:active {
   color: var(--basic-white-rgba);
   background-color: var(--special-hover);
+  outline: none;
 }
 
 .rating {
@@ -905,7 +917,6 @@ img {
   justify-content: center;
   background-color: var(--basic-bg);
   border: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -940,7 +951,8 @@ img {
   cursor: pointer;
 }
 
-.catalog-btn:hover {
+.catalog-btn:hover,
+.catalog-btn:focus {
   background-color: var(--accent-hover);
 }
 
@@ -1010,7 +1022,8 @@ img {
   background-color: var(--accent);
 }
 
-.social-list .social-button:hover {
+.social-list .social-button:hover,
+.social-list .social-button:focus {
   background-color: var(--accent-hover);
 }
 
