@@ -362,7 +362,8 @@ img {
   cursor: pointer;
 }
 
-.appointment .button:hover {
+.appointment .button:hover,
+.appointment .button:focus {
   background-color: var(--special-hover);
 }
 
@@ -708,7 +709,8 @@ img {
   color: var(--basic-black);
 }
 
-.heading-link:hover {
+.heading-link:hover,
+.heading-link:focus {
   color: var(--accent);
 }
 
@@ -750,7 +752,8 @@ img {
   background-color: var(--accent);
 }
 
-.more-details:hover {
+.more-details:hover,
+.more-details:focus {
   background-color: var(--accent-hover);
 }
 
@@ -765,7 +768,8 @@ img {
   background-color: var(--special);
 }
 
-.reservation:hover {
+.reservation:hover,
+.reservation:focus {
   background-color: var(--special-hover);
 }
 
@@ -947,7 +951,8 @@ img {
   cursor: pointer;
 }
 
-.catalog-btn:hover {
+.catalog-btn:hover,
+.catalog-btn:focus {
   background-color: var(--accent-hover);
 }
 
@@ -1017,7 +1022,8 @@ img {
   background-color: var(--accent);
 }
 
-.social-list .social-button:hover {
+.social-list .social-button:hover,
+.social-list .social-button:focus {
   background-color: var(--accent-hover);
 }
 
