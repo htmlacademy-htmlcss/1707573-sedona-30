@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 1 firefox versions,last 1 chrome versions,last 1 safari versions
+*/
+
 /* Fonts */
 
 @font-face {
@@ -18,8 +25,7 @@
         url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
-
-  /* Variables */
+/* Variables */
 
 :root {
   --basic-black: #000000;
@@ -54,7 +60,7 @@
 
 }
 
-  /* Global */
+/* Global */
 .page {
   height: 100%;
 }
@@ -102,7 +108,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -479,7 +486,8 @@ img {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
 }
 
 .checkbox-outer .filter-checkbox:focus + label {
@@ -836,6 +844,9 @@ img {
 }
 
 /* Popup form */
+.travel-hotels.fallback {
+  display: block;
+}
 
 .travel-hotels {
   display: none;
