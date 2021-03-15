@@ -146,6 +146,7 @@ img {
 
 .main-header-logo {
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   top: 0;
   left: 50%;
@@ -191,7 +192,7 @@ img {
   opacity: 0.3;
 }
 
-.site-navigation .active a {
+.site-navigation-item.active a {
   color: var(--special);
 }
 
@@ -204,9 +205,13 @@ img {
 
 .features .subtitle {
   margin: 0;
+  text-align: center;
+}
+
+.features .bold {
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
+  font-weight: 700;
 }
 
 .features .description {
@@ -338,13 +343,11 @@ img {
 .appointment-content {
   padding-top: 56px;
   background-color: var(--basic-white);
-  /* position: relative; */
 }
 
 .appointment .heading {
   margin: 0;
   padding: 0;
-  margin-left: -10px;
   font-size: 30px;
   line-height: 24px;
   color: var(--basic-black);
@@ -386,6 +389,8 @@ img {
 
 .appointment .button:active {
   background-color: var(--special-active);
+  border: none;
+  outline: none;
 }
 .map-container {
   position: relative;
@@ -485,6 +490,7 @@ img {
 .checkbox-outer label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
@@ -548,7 +554,8 @@ img {
 	line-height: 21px;
   font-weight: 400;
 	color: var(--basic-white);
-	text-align: center;	
+	text-align: center;
+  vertical-align: top;
 }
 
 .price-amount .min-price {
@@ -623,6 +630,10 @@ img {
 	border: 10px solid var(--basic-white);
 }
 
+.range:active {
+	outline: none;
+}
+
 .button-show-outer {
   margin-top: 33px;
   text-align: center;
@@ -636,6 +647,7 @@ img {
   padding: 7px 35px 8px 35px;
   color: var(--basic-white);
   text-transform: uppercase;
+  vertical-align: middle;
   background-color: transparent;
   border: none;
   border: 2px solid var(--basic-white);
@@ -651,6 +663,10 @@ img {
 
 .button-show:focus {
   outline: 2px solid var(--basic-black);
+}
+
+.button-show:active {
+  outline: none;
 }
 
 /* Results */
@@ -670,6 +686,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  color: var(--basic-black);
 }
 
 .sorting-controls {
@@ -805,6 +822,7 @@ img {
 .more-details {
   display: inline-block;
   padding: 3px 17px 3px 16px;
+  vertical-align: top;
   background-color: var(--accent);
 }
 
@@ -833,6 +851,7 @@ img {
 .reservation:active {
   color: var(--basic-white-rgba);
   background-color: var(--special-hover);
+  border: none;
   outline: none;
 }
 
@@ -906,6 +925,9 @@ img {
   border: 2px solid var(--basic-bg);
   box-sizing: border-box;
 }
+
+input[type="text"]::-webkit-input-placeholder {color: var(--basic-black); opacity: 1;}
+input[type="text"]::-moz-placeholder          {color: var(--basic-black); opacity: 1;}
 
 .older-label-numbers,
 .kids-label-numbers {
@@ -1028,6 +1050,7 @@ img {
 .catalog-btn:active {
   color: var(--basic-white-rgba);
   background-color: var(--accent-active);
+  border: none;
   outline: none;
 }
 
@@ -1086,11 +1109,11 @@ img {
 
 .main-footer {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 474px 252px 474px;
   align-items: center;
   position: relative;
   margin-top: -120px;
-  padding-top: 23px;
+  padding-top: 21px;
   padding-bottom: 35px;
   background-color: var(--basic-white-opacity);
 }
@@ -1103,10 +1126,6 @@ img {
 .footer-social,
 .footer-copyright {
   justify-self: center;
-}
-
-.footer-contacts {
-  margin-left: 74px;
 }
 
 .footer-info {
@@ -1125,6 +1144,7 @@ img {
   font: inherit;
   color: inherit;
   text-transform: inherit;
+  vertical-align: bottom;
 }
 
 .social-list {
@@ -1165,8 +1185,7 @@ img {
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
-  padding-right: 72px;
+  margin-top: 17px;
   line-height: 26px;
   color: var(--basic-black);
   font-weight: 400;
@@ -1180,6 +1199,7 @@ img {
 .footer-copyright-link {
   display: inline-block;
   margin-left: 8px;
+  vertical-align: middle;
 }
 
 .footer-copyright-link:hover path {
